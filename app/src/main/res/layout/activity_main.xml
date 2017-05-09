@@ -100,8 +100,15 @@
         android:layout_height="150dp"
         android:layout_below="@+id/Main_TitleBar"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true" />
+    <ListView
+        android:id="@+id/main_listview"
+        android:layout_below="@id/main_FrameLayout_contentGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_Main_RadioGroup">
 
-    </com.jude.rollviewpager.RollPagerView>
+    </ListView>
+
 
 </RelativeLayout>
