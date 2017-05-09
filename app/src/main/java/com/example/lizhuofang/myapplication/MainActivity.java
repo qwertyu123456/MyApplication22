@@ -10,6 +10,5 @@ private TextView mText;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mText= (TextView) findViewById(R.id.text_VIEW);
     }
 }
