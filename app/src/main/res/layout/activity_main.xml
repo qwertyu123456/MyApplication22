@@ -6,57 +6,98 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.lizhuofang.myapplication.MainActivity">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#12C412"
-    >
-    <TextView
-        android:id="@+id/main_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="综合"
-        android:textColor="#FFFFFF"
-        android:layout_marginLeft="160dp"
-        android:textSize="30dp"/>
-    <ImageView
-        android:id="@+id/main_search"
+
+    <RelativeLayout
+        android:id="@+id/Main_TitleBar"
         android:layout_width="match_parent"
-        android:layout_toRightOf="@id/main_title"
-        android:layout_height="wrap_content"
-        android:src="@drawable/search_icon"
-        android:layout_marginLeft="90dp"
-        android:gravity="right"/>
-</RelativeLayout>
-    <LinearLayout
-        android:paddingTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="开源咨询"
-                android:paddingLeft="20dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="推荐博客"
-                android:paddingLeft="20dp"/>
+        android:layout_height="40dp"
+        android:background="#42f185"
+        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="技术问答"
-            android:paddingLeft="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="每日一搏"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"/>
+            android:text="综合"
+            android:textSize="25sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/main_Title_Text"
+            />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_subscribe"/>
-    </LinearLayout>
+            android:src="@drawable/search_icon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/main_Serch_Btn"
+            />
 
+    </RelativeLayout>
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/main_FrameLayout_contentGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </com.jude.rollviewpager.RollPagerView>
+    <RadioGroup
+        android:id="@+id/main_Main_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        >
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="综合"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/synthesize"
+            android:layout_marginTop="5dp"
+            android:id="@+id/main_ZongHeBtn"
+
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="动弹"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/move"
+            android:layout_marginTop="5dp"
+            android:id="@+id/main_DongTanBtn"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_nav_add_normal"
+            android:id="@+id/main_AddBtn"
+            />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="发现"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/spealch"
+            android:layout_marginTop="5dp"
+            android:id="@+id/main_FaXianBtn"
+            />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="我的"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/mine"
+            android:layout_marginTop="5dp"
+            android:id="@+id/main_MineBtn"
+            />
+    </RadioGroup>
 </LinearLayout>
