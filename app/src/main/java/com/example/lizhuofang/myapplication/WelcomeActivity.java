@@ -10,7 +10,6 @@ import android.os.Handler;
  */
 
 public class WelcomeActivity extends Activity {
-    private Handler mHandler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
