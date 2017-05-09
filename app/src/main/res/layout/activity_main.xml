@@ -31,14 +31,6 @@
 
     </RelativeLayout>
 
-    <com.jude.rollviewpager.RollPagerView
-        android:layout_below="@id/Main_TitleBar"
-        android:id="@+id/main_FrameLayout_contentGroup"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        >
-
-    </com.jude.rollviewpager.RollPagerView>
     <RadioGroup
         android:layout_alignParentBottom="true"
         android:id="@+id/main_Main_RadioGroup"
@@ -101,5 +93,15 @@
             android:id="@+id/main_MineBtn"
             />
     </RadioGroup>
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/main_FrameLayout_contentGroup"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/Main_TitleBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </com.jude.rollviewpager.RollPagerView>
 
 </RelativeLayout>
