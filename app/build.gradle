@@ -28,8 +28,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.jude:rollviewpager:1.2.9'
     compile files('libs/volley.jar')
+    compile 'com.android.support:design:25.0.1'
     compile('com.thoughtworks.xstream:xstream:1.4.7') {
         exclude group: 'xmlpull', module: 'xmlpull'
+
     }
     
 }
